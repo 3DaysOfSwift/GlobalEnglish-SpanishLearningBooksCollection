@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ana",
+    "name": "Ana",
+    "portrait": "AuthorAna",
+    "introduction": "Small cafés. Familiar faces. The everyday moments that make a neighbourhood feel like home.",
+    "note": "A familiar café can be the beginning of a friendship. That is the feeling behind my little story."
+  },
+  {
+    "id": "luis",
+    "name": "Luis",
+    "portrait": "AuthorLuis",
+    "introduction": "Gardens, family and the things we learn when we slow down long enough to notice.",
+    "note": "In this story, a garden becomes a way to remember a father—and the care he passed on."
+  },
+  {
+    "id": "marta",
+    "name": "Marta",
+    "portrait": "AuthorMarta",
+    "introduction": "Journeys, reunions and the quiet excitement of finding our way back to the people we love.",
+    "note": "Sometimes a train ticket means more than a journey. It means someone is waiting for you."
+  },
+  {
+    "id": "credit-fade9533cfe2",
+    "name": "Diego · demo narrator",
+    "portrait": "",
+    "introduction": "An editorial contributor to the Cuentiva demo library.",
+    "note": "These are illustrative learning stories, not a verified personal account."
+  },
+  {
+    "id": "credit-53e13e40b11a",
+    "name": "Clara · demo narrator",
+    "portrait": "",
+    "introduction": "An editorial contributor to the Cuentiva demo library.",
+    "note": "These are illustrative learning stories, not a verified personal account."
+  },
+  {
+    "id": "credit-5b644d127a59",
+    "name": "Cuentiva · fictional story",
+    "portrait": "",
+    "introduction": "An editorial contributor to the Cuentiva demo library.",
+    "note": "These are illustrative learning stories, not a verified personal account."
+  },
+  {
+    "id": "credit-4ffea73372fb",
+    "name": "Cuentiva · original script",
+    "portrait": "",
+    "introduction": "An editorial contributor to the Cuentiva demo library.",
+    "note": "These are illustrative learning stories, not a verified personal account."
+  },
+  {
+    "id": "credit-0047224f3651",
+    "name": "Cuentiva · verb story",
+    "portrait": "",
+    "introduction": "An editorial contributor to the Cuentiva demo library.",
+    "note": "These are illustrative learning stories, not a verified personal account."
+  },
+  {
+    "id": "credit-5f7d24711b1b",
+    "name": "Cuentiva · fictional traveller",
+    "portrait": "",
+    "introduction": "An editorial contributor to the Cuentiva demo library.",
+    "note": "These are illustrative learning stories, not a verified personal account."
+  }
+]

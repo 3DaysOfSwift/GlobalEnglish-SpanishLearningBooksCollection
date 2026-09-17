@@ -1,0 +1,22 @@
+name: Publish reviewed library
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-library
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm run build
+      - run: node tools/publish.js
+        env:
+          GH_TOKEN: ${{ github.token }}
