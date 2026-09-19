@@ -52,7 +52,7 @@ export function validatePack(p) {
   for(const a of p.authors) {
     check(a && Object.keys(a).sort().join(',')==='id,introduction,name,note,portrait' && typeof a.id==='string' && idPattern.test(a.id) && !ids.has(a.id),'Invalid author ID');
     check(['name','introduction','note'].every(k=>text(a[k]) && a[k].length<=4000),'Invalid author text');
-    check(['','AuthorAna','AuthorLuis','AuthorMarta'].includes(a.portrait),'Only bundled portrait names are supported');
+    check(["", "AuthorAna", "AuthorLuis", "AuthorMarta", "StorytellerBrasa", "StorytellerMusgo", "StorytellerPipa", "StorytellerZumi", "StorytellerLuma", "StorytellerNube", "StorytellerTilo", "StorytellerMora", "StorytellerFaro"].includes(a.portrait),'Only bundled portrait names are supported');
     ids.add(a.id);
   }
   check(p.books.every(b=>ids.has(b.authorID)) && p.authors.every(a=>p.books.some(b=>b.authorID===a.id)),'Pack must contain exactly its referenced authors');

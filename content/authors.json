@@ -1,65 +1,65 @@
 [
   {
     "id": "ana",
-    "name": "Ana",
-    "portrait": "AuthorAna",
-    "introduction": "Small cafés. Familiar faces. The everyday moments that make a neighbourhood feel like home.",
-    "note": "A familiar café can be the beginning of a friendship. That is the feeling behind my little story."
+    "name": "Brasa",
+    "portrait": "StorytellerBrasa",
+    "introduction": "A little dragon with a generous heart and a weakness for café stories.",
+    "note": "I collect small acts of kindness. There is usually a cup of coffee nearby."
   },
   {
     "id": "luis",
-    "name": "Luis",
-    "portrait": "AuthorLuis",
-    "introduction": "Gardens, family and the things we learn when we slow down long enough to notice.",
-    "note": "In this story, a garden becomes a way to remember a father—and the care he passed on."
+    "name": "Musgo",
+    "portrait": "StorytellerMusgo",
+    "introduction": "A woodland wizard who finds magic in gardens, family and everyday care.",
+    "note": "Slow down with me. The smallest things often have the biggest stories."
   },
   {
     "id": "marta",
-    "name": "Marta",
-    "portrait": "AuthorMarta",
-    "introduction": "Journeys, reunions and the quiet excitement of finding our way back to the people we love.",
-    "note": "Sometimes a train ticket means more than a journey. It means someone is waiting for you."
+    "name": "Pipa",
+    "portrait": "StorytellerPipa",
+    "introduction": "A curious lizard with a travel notebook and a talent for finding new paths.",
+    "note": "Every journey begins with a question. Mine is usually: what is around that corner?"
   },
   {
     "id": "credit-fade9533cfe2",
-    "name": "Diego · demo narrator",
-    "portrait": "",
-    "introduction": "An editorial contributor to the Cuentiva demo library.",
-    "note": "These are illustrative learning stories, not a verified personal account."
+    "name": "Zumi",
+    "portrait": "StorytellerZumi",
+    "introduction": "A tiny fly with enormous curiosity about work, ideas and how things happen.",
+    "note": "I ask questions, make mistakes and try again. Come and see what we discover."
   },
   {
     "id": "credit-53e13e40b11a",
-    "name": "Clara · demo narrator",
-    "portrait": "",
-    "introduction": "An editorial contributor to the Cuentiva demo library.",
-    "note": "These are illustrative learning stories, not a verified personal account."
+    "name": "Luma",
+    "portrait": "StorytellerLuma",
+    "introduction": "A gentle moth who follows the light of a good idea.",
+    "note": "An ordinary day can hold a surprising possibility. Let us look for one together."
   },
   {
     "id": "credit-5b644d127a59",
-    "name": "Cuentiva · fictional story",
-    "portrait": "",
-    "introduction": "An editorial contributor to the Cuentiva demo library.",
-    "note": "These are illustrative learning stories, not a verified personal account."
+    "name": "Nube",
+    "portrait": "StorytellerNube",
+    "introduction": "A wandering cloud creature with a pocket full of stories and a playful imagination.",
+    "note": "I bring tales about being human: the funny moments, the difficult choices and the joy of starting again."
   },
   {
     "id": "credit-4ffea73372fb",
-    "name": "Cuentiva · original script",
-    "portrait": "",
-    "introduction": "An editorial contributor to the Cuentiva demo library.",
-    "note": "These are illustrative learning stories, not a verified personal account."
+    "name": "Tilo",
+    "portrait": "StorytellerTilo",
+    "introduction": "A patient tortoise who loves listening to people and bringing their conversations to life.",
+    "note": "Take a part, say a line and join the conversation. There is a place for your voice here."
   },
   {
     "id": "credit-0047224f3651",
-    "name": "Cuentiva · verb story",
-    "portrait": "",
-    "introduction": "An editorial contributor to the Cuentiva demo library.",
-    "note": "These are illustrative learning stories, not a verified personal account."
+    "name": "Mora",
+    "portrait": "StorytellerMora",
+    "introduction": "A mischievous mushroom sprite who makes words spring into action.",
+    "note": "Words change when our stories change. Let us discover what they can do."
   },
   {
     "id": "credit-5f7d24711b1b",
-    "name": "Cuentiva · fictional traveller",
-    "portrait": "",
-    "introduction": "An editorial contributor to the Cuentiva demo library.",
-    "note": "These are illustrative learning stories, not a verified personal account."
+    "name": "Faro",
+    "portrait": "StorytellerFaro",
+    "introduction": "A curious owl with a map, a satchel and a love of faraway places.",
+    "note": "Follow me into a new neighbourhood. There is always another story waiting around the corner."
   }
 ]
