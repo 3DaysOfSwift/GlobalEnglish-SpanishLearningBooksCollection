@@ -39,6 +39,30 @@ byte sizes, book counts and release tags. A pack filename is `<id>-<checksum>.js
 Publish through the manual **Publish reviewed library** GitHub Actions workflow, or
 run `node tools/publish.js` after building with an authenticated GitHub CLI.
 
+## Current app alignment
+
+The current baseline matches Cuentiva editorial edition 4: 52 books, 156 chapters,
+792 bilingual passages, 5,771 matching pairs and nine current storyteller profiles.
+Book IDs remain unchanged. `ending` holds chapter three and `editorialRevision`
+identifies the editorial edition; edition 4 requires three nonempty chapters and
+a complete matching glossary with at least 30 entries per book.
+
+When both repositories are siblings, export the app baseline and verify it with:
+
+```sh
+python3 ../Cuentiva/scripts/sync_publishing_library.py
+python3 ../Cuentiva/scripts/sync_publishing_library.py --check
+npm test
+npm run build
+```
+
+Exporting replaces the publishing source with the app baseline; use `--check` to
+check alignment without changing files. For subsequent published corrections,
+preserve book IDs and increment `editorialRevision` on changed books. Keep passage
+IDs for unchanged text; use new IDs for rewritten passages. Review translations
+and regenerate vocabulary/glossaries when text changes. Publication is still a
+separate manual action; committing these files does not publish a release.
+
 ## Download contract
 
 Catalogue:

@@ -9,7 +9,7 @@ const check = (ok, message) => { if (!ok) throw new Fault(400, message); };
 const text = x => typeof x === 'string' && x.length > 0;
 export function validateBooks(books) {
   check(Array.isArray(books) && books.length > 0 && books.length <= 20000, 'Invalid books');
-  const keys = new Set('id title englishTitle author level symbol palette summary sentences vocabulary license authorID matchGlossary isDemoLocation submissionLocation format scene continuation verbFocus'.split(' '));
+  const keys = new Set('id title englishTitle author level symbol palette summary sentences vocabulary license authorID matchGlossary isDemoLocation submissionLocation format scene continuation ending editorialRevision verbFocus'.split(' '));
   const ids = new Set();
   for (const b of books) {
     check(b && typeof b === 'object' && Object.keys(b).every(k => keys.has(k)), 'Unsupported book field (text only)');
@@ -17,8 +17,13 @@ export function validateBooks(books) {
     check(/^[a-zA-Z0-9_-]{1,80}$/.test(b.id) && !ids.has(b.id), 'Duplicate or invalid book ID'); ids.add(b.id);
     check(['A1','A2','B1','B2','C1','C2'].includes(b.level) && Number.isInteger(b.palette) && b.palette >= 0, 'Invalid book metadata');
     check(b.format == null || ['story','movieScript','verbs'].includes(b.format), 'Invalid format');
-    check(Array.isArray(b.sentences) && b.sentences.length && (b.continuation == null || Array.isArray(b.continuation)), 'Invalid sentences');
-    const lines = [...b.sentences, ...(b.continuation || [])], lineIDs = new Set();
+    check(Array.isArray(b.sentences) && b.sentences.length && (b.continuation == null || Array.isArray(b.continuation)) && (b.ending == null || Array.isArray(b.ending)), 'Invalid sentences');
+    check(b.editorialRevision == null || (Number.isInteger(b.editorialRevision) && b.editorialRevision >= 0), 'Invalid editorial revision');
+    if (b.editorialRevision >= 4) {
+      check(b.continuation?.length > 0 && b.ending?.length > 0, 'Three chapters required for editorial edition 4');
+      check(Array.isArray(b.vocabulary) && b.vocabulary.length >= 30 && b.vocabulary.every(v => text(b.matchGlossary?.[v.word])), 'Complete matching glossary required');
+    }
+    const lines = [...b.sentences, ...(b.continuation || []), ...(b.ending || [])], lineIDs = new Set();
     check(lines.length <= 1000, 'Book too long');
     for (const s of lines) {
       check(s && Object.keys(s).every(k => ['id','spanish','english','speaker'].includes(k)) && text(s.id) && text(s.spanish) && text(s.english) && (s.speaker == null || text(s.speaker)), 'Invalid sentence');
